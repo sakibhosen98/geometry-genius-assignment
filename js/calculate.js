@@ -21,6 +21,28 @@ document.getElementById('btn-triagle').addEventListener('click', function(){
   container.appendChild(tr);
 })
 
+// Rectangle
+
+document.getElementById('btn-rectangle').addEventListener('click', function(){
+ serial += 1;
+  const secondName = getTextValueById('second-name');
+  const rectangleWidth = getInputValueById('rectangle-width');
+  const rectangleLength = getInputValueById('rectangle-length');
+  const rectangleArea = rectangleWidth * rectangleLength;
+  
+  //Create element and Appendchild-----------
+  const container = document.getElementById('table-container');
+  const tr = document.createElement('tr');
+  tr.innerHTML = `
+    <td> ${serial} </td>
+    <td> ${secondName} </td> 
+    <td> ${rectangleArea}<span>cm</span><sup>2</sup></td>
+    <td> <button class="bg-blue-500 px-2 py-1 text-white rounded-xl">Convert to m<span>2</span></button>
+    </td>
+  `
+  container.appendChild(tr);
+})
+
 
 
 // =============================================
