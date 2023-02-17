@@ -57,125 +57,141 @@
   </header>
   <!-- main section start -->
   <main>
-    <section class="mt-5">
-      <div>
-        <div class="card w-96 bg-base-100 shadow-xl">
+    <section class="lg:px-12 mt-5 flex flex-col md:flex-row lg:flex-row gap-5">
+      <div class="grid md:grid-cols-3 lg:grid-cols-3 w-[70%] gap-5">
+        <div class="card w-full bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title mb-3">Triangle</h2>
+            <h2 id="first-name" class="card-title mb-3">Triangle</h2>
 
             <div>
-              <input class="w-[25%] bg-gray-200 px-2 py-1" type="text" placeholder="b">
+              <input id="triangle-land" class="w-[35%] bg-gray-200 px-2" type="text" placeholder="b">
               <span class="font-semibold"> cm </span>
-            <input class="w-[25%] bg-gray-200 px-2 py-1" type="text" placeholder="h">
+            <input id="triangle-height" class="w-[35%] bg-gray-200 px-2" type="text" placeholder="h">
             <span class="font-semibold"> cm </span>
             </div>
             
             <div class="card-actions mt-4">
-              <button class="btn btn-wide bg-blue-500">Calculate</button>
+              <button id="btn-triagle" class="bg-blue-500 px-7 py-2 text-xl text-white rounded-xl">Calculate</button>
             </div>
+
           </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card w-full bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="./images/rectangle.png" alt="Shoes" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title mb-3">Rectangle</h2>
+            <h2 id="second-name" class="card-title mb-3">Rectangle</h2>
 
             <div>
-              <input class="w-[25%] bg-gray-200 px-2 py-1" type="text" placeholder="w">
+              <input id="rectangle-width" class="w-[35%] bg-gray-200 px-2" type="text" placeholder="w">
               <span class="font-semibold"> cm </span>
-            <input class="w-[25%] bg-gray-200 px-2 py-1" type="text" placeholder="l">
+            <input id="rectangle-length" class="w-[35%] bg-gray-200 px-2" type="text" placeholder="l">
             <span class="font-semibold"> cm </span>
             </div>
             
             <div class="card-actions mt-4">
-              <button class="btn btn-wide bg-blue-500">Calculate</button>
+              <button id="btn-rectangle" class="bg-blue-500 px-7 py-2 text-xl text-white rounded-xl">Calculate</button>
             </div>
           </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card w-full bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="./images/parallelogram.png" alt="Shoes" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title mb-3">Parallelogram</h2>
+            <h2 id="third-name" class="card-title mb-3">Parallelogram</h2>
 
             <div>
-              <input class="w-[25%] bg-gray-200 px-2 py-1" type="text" placeholder="b">
+              <input id="parallelogram-land" class="w-[35%] bg-gray-200 px-2" type="text" placeholder="b">
               <span class="font-semibold"> cm </span>
-            <input class="w-[25%] bg-gray-200 px-2 py-1" type="text" placeholder="h">
+            <input id="parallelogram-height" class="w-[35%] bg-gray-200 px-2" type="text" placeholder="h">
             <span class="font-semibold"> cm </span>
             </div>
             
             <div class="card-actions mt-4">
-              <button class="btn btn-wide bg-blue-500">Calculate</button>
+              <button id="btn-parallelogram" class="bg-blue-500 px-7 py-2 text-xl text-white rounded-xl">Calculate</button>
             </div>
           </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card w-full bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="./images/rhombus.png" alt="Shoes" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title mb-3">Rhombus</h2>
+            <h2 id="forth-name" class="card-title mb-3">Rhombus</h2>
 
             <div>
-              <input class="w-[25%] bg-gray-200 px-2 py-1" type="text" placeholder="d1">
+              <input id="rhombus-d1" class="w-[35%] bg-gray-200 px-2" type="text" placeholder="d1">
               <span class="font-semibold"> cm </span>
-            <input class="w-[25%] bg-gray-200 px-2 py-1" type="text" placeholder="d2">
+            <input id="rhombus-d2" class="w-[35%] bg-gray-200 px-2" type="text" placeholder="d2">
             <span class="font-semibold"> cm </span>
             </div>
             
             <div class="card-actions mt-4">
-              <button class="btn btn-wide bg-blue-500">Calculate</button>
+              <button id="btn-rhombus" class="bg-blue-500 px-7 py-2 text-xl text-white rounded-xl">Calculate</button>
             </div>
           </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card w-full bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="./images/pentagon.png" alt="Shoes" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title mb-3">Pentogon</h2>
+            <h2 id="fifth-name" class="card-title mb-3">Pentagon</h2>
 
             <div>
-              <input class="w-[25%] bg-gray-200 px-2 py-1" type="text" placeholder="p">
+              <input id="pentagon-p" class="w-[35%] bg-gray-200 px-2" type="text" placeholder="p">
               <span class="font-semibold"> cm </span>
-            <input class="w-[25%] bg-gray-200 px-2 py-1" type="text" placeholder="b">
+            <input id="pentagon-b" class="w-[35%] bg-gray-200 px-2" type="text" placeholder="b">
             <span class="font-semibold"> cm </span>
             </div>
             
             <div class="card-actions mt-4">
-              <button class="btn btn-wide bg-blue-500">Calculate</button>
+              <button id="btn-Pentagon" class="bg-blue-500 px-7 py-2 text-xl text-white rounded-xl">Calculate</button>
             </div>
           </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card w-full bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="./images/ellipse.png" alt="Shoes" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title mb-3">Ellipse</h2>
+            <h2 id="sixth-name" class="card-title mb-3">Ellipse</h2>
 
             <div>
-              <input class="w-[25%] bg-gray-200 px-2 py-1" type="text" placeholder="a">
+              <input id="ellipse-a" class="w-[35%] bg-gray-200 px-2" type="text" placeholder="a">
               <span class="font-semibold"> cm </span>
-            <input class="w-[25%] bg-gray-200 px-2 py-1" type="text" placeholder="b">
+            <input id="ellipse-b" class="w-[35%] bg-gray-200 px-2" type="text" placeholder="b">
             <span class="font-semibold"> cm </span>
             </div>
             
             <div class="card-actions mt-4">
-              <button class="btn btn-wide bg-blue-500">Calculate</button>
+              <button id="btn-ellipse" class="bg-blue-500 px-7 py-2 text-xl text-white rounded-xl">Calculate</button>
             </div>
           </div>
         </div>
       </div>
-      <div></div>
+      <div class="w-[25%] mx-auto">
+        <!-- Calculation Area -->
+        <h2 class="text-2xl font-semibold text-center underline">Area Calculation</h2>
+        <div class="overflow-x-auto">
+          <!-- Table -->
+          <table class="table w-full">
+            <thead>
+              
+            </thead>
+            <tbody id="table-container">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
     </section>
   </main>
+  <script src="js/calculate.js"></script>
 </body>
 </html>
