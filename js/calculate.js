@@ -1,14 +1,16 @@
-
-// Triangle
 let serial = 0;
 document.getElementById('btn-triagle').addEventListener('click', function(){
   serial += 1;
   const firstName = getTextValueById('first-name');
   const triagleLand = getInputValueById('triangle-land');
-  const triagleHeight = getInputValueById('triangle-height');
-  const triagleArea = (0.5 * triagleLand * triagleHeight);
-  
-  // Create element and appendChild
+  const triagleHeight = getInputValueById('triangle-height')
+  if(isNaN(triagleLand, triagleHeight)){
+    alert('Please enter the provide numbers!')
+    return;
+  }
+  const triagleArea = (0.5 * triagleLand * triagleHeight).toFixed(2);
+
+    // Create element and appendChild
   const container = document.getElementById('table-container');
   const tr = document.createElement('tr');
   tr.innerHTML = `
@@ -19,7 +21,32 @@ document.getElementById('btn-triagle').addEventListener('click', function(){
     </td>
   `
   container.appendChild(tr);
+
 })
+
+// ---------------------
+
+// Triangle
+// let serial = 0;
+// document.getElementById('btn-triagle').addEventListener('click', function(){
+//   serial += 1;
+//   const firstName = getTextValueById('first-name');
+//   const triagleLand = getInputValueById('triangle-land');
+//   const triagleHeight = getInputValueById('triangle-height');
+//   const triagleArea = (0.5 * triagleLand * triagleHeight);
+  
+//   // Create element and appendChild
+//   const container = document.getElementById('table-container');
+//   const tr = document.createElement('tr');
+//   tr.innerHTML = `
+//     <td> ${serial} </td>
+//     <td> ${firstName} </td> 
+//     <td> ${triagleArea}<span>cm</span><sup>2</sup></td>
+//     <td> <button class="bg-blue-500 px-2 py-1 text-white rounded-xl">Convert to m<span>2</span></button>
+//     </td>
+//   `
+//   container.appendChild(tr);
+// })
 
 // Rectangle
 
@@ -28,6 +55,10 @@ document.getElementById('btn-rectangle').addEventListener('click', function(){
   const secondName = getTextValueById('second-name');
   const rectangleWidth = getInputValueById('rectangle-width');
   const rectangleLength = getInputValueById('rectangle-length');
+  if(isNaN(rectangleWidth, rectangleLength)){
+    alert('Please enter the provide numbers!')
+    return;
+  }
   const rectangleArea = (rectangleWidth * rectangleLength).toFixed(2);
   
   //Create element and Appendchild-----------
@@ -128,10 +159,18 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
 
   })
 
+  // Random color all card
+  document.addEventListener('mouseover', function(){
+    const cards = document.getElementsByClassName('card');
+    for (const card of cards) {
+      card.style.backgroundColor = randomColor();
+    }
+  });
+
 
 // =============================================
 // function -1: for get input value
-function getInputValueById(idName){
+function getInputValueById(idName){ 
   const inputElement = document.getElementById(idName).value;
   const value = parseFloat(inputElement);
   return value;
@@ -143,20 +182,12 @@ function getInputValueById(idName){
     return textElement;
   }
 
-
-  // // function -3: for bg random color
-  // function randomColor() {
-  //   let color = [];
-  //   for (let i = 0; i < 3; i++) {
-  //     color.push(Math.floor(Math.random() * 256));
-  //   }
-  //   return 'rgb(' + color.join(', ') + ')';
-  // } 
-  // document.addEventListener("mouseover", function(){
-
-  //   document.body.style.backgroundColor = randomColor();
-  // });
+// function for Random Color
+  function randomColor() {
+    let color = [];
+    for (let i = 0; i < 3; i++) {
+      color.push(Math.floor(Math.random() * 256));
+    }
+    return 'rgb(' + color.join(', ') + ')';
+  } 
   
-  // document.querySelector('circle').addEventListener('mouseover', event => {
-  //       event.target.style.fill = randomColor();
-  // });
