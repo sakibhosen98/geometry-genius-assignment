@@ -32,7 +32,7 @@
             <li><a>Item 3</a></li>
           </ul>
         </div>
-        <h1 class="text-2xl font-semibold">Geometry Genius</h1>
+        <h1 class="text-3xl font-bold">Interactive <br> <span class="text-xl font-normal">Geometry Genius</span></h1>
       </div>
       <!-- <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
@@ -57,15 +57,15 @@
   </header>
   <!-- main section start -->
   <main>
-    <section class="lg:px-12 mt-5 flex flex-col md:flex-row lg:flex-row gap-5">
+    <section class="lg:px-12 mt-5 flex flex-col md:flex-row lg:flex-row gap-3">
       <div class="grid md:grid-cols-3 lg:grid-cols-3 w-[70%] gap-5">
         <div class="card w-full bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
-            <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+            <img  src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
             <h2 id="first-name" class="card-title mb-3">Triangle</h2>
-
+            <p>Area(A) = 0.5 * b * h</p>
             <div>
               <input id="triangle-land" class="w-[35%] bg-gray-200 px-2" type="text" placeholder="b">
               <span class="font-semibold"> cm </span>
@@ -85,7 +85,7 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 id="second-name" class="card-title mb-3">Rectangle</h2>
-
+            <p>Area(A) = w * l</p>
             <div>
               <input id="rectangle-width" class="w-[35%] bg-gray-200 px-2" type="text" placeholder="w">
               <span class="font-semibold"> cm </span>
@@ -104,7 +104,7 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 id="third-name" class="card-title mb-3">Parallelogram</h2>
-
+            <p>Area(A) = b * h</p>
             <div>
               <input id="parallelogram-land" class="w-[35%] bg-gray-200 px-2" type="text" placeholder="b">
               <span class="font-semibold"> cm </span>
@@ -123,7 +123,7 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 id="forth-name" class="card-title mb-3">Rhombus</h2>
-
+            <p>Area(A) = 0.5 * d1 * d2</p>
             <div>
               <input id="rhombus-d1" class="w-[35%] bg-gray-200 px-2" type="text" placeholder="d1">
               <span class="font-semibold"> cm </span>
@@ -142,7 +142,7 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 id="fifth-name" class="card-title mb-3">Pentagon</h2>
-
+            <p>Area(A) = 0.5 * p * b</p>
             <div>
               <input id="pentagon-p" class="w-[35%] bg-gray-200 px-2" type="text" placeholder="p">
               <span class="font-semibold"> cm </span>
@@ -161,7 +161,7 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 id="sixth-name" class="card-title mb-3">Ellipse</h2>
-
+            <p>Area(A) = &#960;ab</p>
             <div>
               <input id="ellipse-a" class="w-[35%] bg-gray-200 px-2" type="text" placeholder="a">
               <span class="font-semibold"> cm </span>
@@ -175,10 +175,10 @@
           </div>
         </div>
       </div>
-      <div class="w-[25%] mx-auto">
+      <div class="w-3/4] mx-auto">
         <!-- Calculation Area -->
         <h2 class="text-2xl font-semibold text-center underline">Area Calculation</h2>
-        <div class="overflow-x-auto">
+        <div class="">
           <!-- Table -->
           <table class="table w-full">
             <thead>
