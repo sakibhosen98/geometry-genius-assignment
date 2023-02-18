@@ -1,3 +1,7 @@
+// blog btn for others site visited
+document.getElementById('btn-blog').addEventListener('click', function(){
+  window.location.href = 'question.html';
+})
 
 // Card callcultion start:
 // Triangle
@@ -62,6 +66,7 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
   const parallelogramHeight = getInputValueById('parallelogram-height');
   const parallelogramArea = (parallelogramLand * parallelogramHeight).toFixed(2);
   
+  //Create element and Appendchild-----
   const container = document.getElementById('table-container');
   const tr = document.createElement('tr');
   tr.innerHTML = `
@@ -83,6 +88,7 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
     const rhombusD2 = getInputValueById('rhombus-d2');  
     const rhombusArea = (0.5 * rhombusD1 * rhombusD2).toFixed(2);
     
+     //Create element and Appendchild-----
     const container = document.getElementById('table-container');
     const tr = document.createElement('tr');
     tr.innerHTML = `
@@ -104,6 +110,7 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
     const pentagonB = getInputValueById('pentagon-b');
     const pentagonArea = (0.5 * PentagonP * pentagonB).toFixed(2);
 
+     //Create element and Appendchild-----
     const container = document.getElementById('table-container');
     const tr = document.createElement('tr');
     tr.innerHTML = `
@@ -125,6 +132,7 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
     const ellipseB = getInputValueById('ellipse-b');
     const ellipseArea = (3.14 * ellipseA * ellipseB).toFixed(2);
     
+     //Create element and Appendchild-----
     const container = document.getElementById('table-container');
     const tr = document.createElement('tr');
     tr.innerHTML = `
@@ -146,8 +154,7 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
     }
   });
 
-
-// =============================================
+  // ============== Function ====================
 // function -1: for get input value
 function getInputValueById(idName){ 
   const inputElement = document.getElementById(idName).value;
