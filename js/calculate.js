@@ -156,10 +156,13 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
 
   // ============== Function ====================
 // function -1: for get input value
-function getInputValueById(idName){ 
-  const inputElement = document.getElementById(idName).value;
-  const value = parseFloat(inputElement);
-  return value;
+
+  function getInputValueById(inputFieldId){
+    const inputField = document.getElementById(inputFieldId);
+    const inputFieldValueString = inputField.value;
+    const inputFieldValue = parseFloat(inputFieldValueString);
+    inputField.value = '';
+    return inputFieldValue;
   }
 
   // function-2: for get innerText value
